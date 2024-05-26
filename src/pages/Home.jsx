@@ -1,11 +1,13 @@
-import React from 'react';
-import Banner from '../components/Banner';
+import Banner from '../components/home/Banner';
+import Products from '../components/home/Products';
+import QnaSec from '../components/home/QnaSec';
 
 const Home = () => {
     return (
-        <div>
-            <h1 className='text-5xl font-bold'>Home</h1>
-            <Banner/>
+        <div className=''>
+            <Banner />
+            <Products />
+            <QnaSec />
         </div>
     );
 };
