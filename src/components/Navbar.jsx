@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
 
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
 
   const handleLogout = () => {
     logout();
   }
   return (
-    <div className="navbar bg-emerald-500">
+    <div className="navbar bg-emerald-500 fixed z-40 bg-opacity-80">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -25,14 +26,27 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">Paradise</a>
+        <Link to={"/"} className="btn btn-ghost text-xl">Paradise</Link>
       </div>
       <div className="navbar-end">
         <ul>
-          <li>
-            <button onClick={() => handleLogout()} className="btn btn-error btn-sm me-4">Logout</button>
-            <button>Logout</button>
-          </li>
+          {
+            user ?
+              <>
+                <ul className="flex items-center">
+                  <li><button onClick={() => handleLogout()} className="btn btn-error btn-sm me-4">Logout</button></li>
+                  <li> <img className="w-12 btn-circle" src={user.photoURL} alt="" /> </li>
+                </ul>
+
+              </> :
+              <div className="dropdown">
+                <div className="text-3xl hover:scale-105"> <button className="" ><FaUserCircle /></button> </div>
+                <ul className="dropdown-content w-40 bg-base-100 mt-3 -ms-28 p-2 rounded-md">
+                  <li className="btn btn-sm w-full btn-link hover:bg-red-600">login</li>
+                  <li>login</li>
+                </ul>
+              </div>
+          }
         </ul>
       </div>
     </div>

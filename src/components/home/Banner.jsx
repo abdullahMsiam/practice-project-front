@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div>
+    <div className="">
       <div className="hero h-[400px] bg-banner" >
         <div className="hero-overlay bg-opacity-70"></div>
         <div className="hero-content text-center text-neutral-content">

@@ -2,13 +2,13 @@
 const SingleProduct = () => {
     return (
         <div>
-            <div className="card card-compact w-720 bg-base-100 shadow-xl">
-                <img className="h-56" src="/src/assets/product.jpg" alt="Shoes" />
+            <div className="card card-compact  bg-base-100 shadow-xl hover:underline hover:scale-105">
+                <img className="h-32" src="/src/assets/product.jpg" alt="Shoes" />
                 <div className="card-body">
                     <h2 className="card-title">Food!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>You may choice!</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn w-full btn-sm btn-success">Trail On</button>
                     </div>
                 </div>
             </div>
