@@ -6,6 +6,8 @@ import DashboardLayout from '../layouts/DashboardLayout';
 import About from '../pages/About';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import Dashboard from '../pages/Dashboard';
+import PrivateRoute from './private/PrivateRoute';
 
 
 
@@ -36,7 +38,17 @@ const router = createBrowserRouter([
     {
         path: "/dashboard",
         element: <DashboardLayout />,
-        errorElement: <ErrorPage />
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "",
+                element: (
+                    <PrivateRoute>
+                        <Dashboard />
+                    </PrivateRoute>
+                )
+            }
+        ]
     }
 ])
 

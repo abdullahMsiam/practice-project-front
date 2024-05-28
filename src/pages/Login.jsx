@@ -2,10 +2,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GoogleLogin from '../components/login-registration/GoogleLogin';
+import useAuth from '../hooks/useAuth';
 
 const Login = () => {
+
+    const { signIn } = useAuth();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+
+        const email = form.email.value;
+        const password = form.password.value;
+
+        signIn(email, password);
+
+        console.log(email, password);
+    }
     return (
-        <form className="hero min-h-screen bg-base-200">
+        <form onSubmit={handleSubmit} className="hero min-h-screen md:bg-base-200 -ms-5 md:mx-auto">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
@@ -19,7 +34,7 @@ const Login = () => {
 
                 </div>
 
-                <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="card shrink-0 md:w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
                         <div className="form-control">
                             <label className="label">

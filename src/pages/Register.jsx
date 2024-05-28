@@ -2,10 +2,12 @@
 import React, { useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
 
 const Register = () => {
 
-    const [passMatch, setPassMatch] = useState(true)
+    const [passMatch, setPassMatch] = useState(true);
+    const { createUser } = useAuth();
 
 
     const handleSubmit = (e) => {
@@ -19,15 +21,19 @@ const Register = () => {
         if (password !== confirmPassword) {
             setPassMatch(false);
         }
+
+        if (password === confirmPassword) {
+            createUser(email, password);
+        }
         console.log(email, password, confirmPassword);
     }
     return (
-        <form onSubmit={handleSubmit} className="hero min-h-screen bg-base-200">
+        <form onSubmit={handleSubmit} className="hero min-h-screen md:bg-base-200 -ms-5 md:mx-auto">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Sign Up!</h1>
                     <h1 className="text-2xl font-bold pt-6">Policy Alert!</h1>
-                    <ol className='pb-6 pt-2 list-disc sm:hidden lg:block'>
+                    <ol className='pb-6 pt-2 list-disc hidden md:block'>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>
@@ -36,7 +42,7 @@ const Register = () => {
 
                 </div>
 
-                <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="card shrink-0   md:w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
                         <div className="form-control">
                             <label className="label">
@@ -61,7 +67,7 @@ const Register = () => {
                         }
 
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">Sign up</button>
                             <button className="btn border-black border-2 my-4"> <FcGoogle /> Google</button>
                             <p>Already have an account? <Link to={"/login"} className='text-red-600 font-bold hover:underline'>Login</Link></p>
                         </div>
