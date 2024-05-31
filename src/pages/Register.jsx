@@ -32,7 +32,7 @@ const Register = () => {
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Sign Up!</h1>
-                    <h1 className="text-2xl font-bold pt-6">Policy Alert!</h1>
+                    <h1 className="text-2xl font-bold pt-6 hidden md:block">Policy Alert!</h1>
                     <ol className='pb-6 pt-2 list-disc hidden md:block'>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>

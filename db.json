@@ -1,0 +1,84 @@
+{
+    "shoes": [
+        {
+            "id": 1,
+            "title": "Adidas NMD_R1 Primeblue Shoes",
+            "brand": "Adidas",
+            "price": "$117.00",
+            "description": "White 5.5 - Women's Originals Shoes with a rating of 4.4 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 2,
+            "title": "DOUSSPRT Women's Water Shoes",
+            "brand": "DOUSSPRT",
+            "price": "$27.99",
+            "description": "Quick Drying Sports Aqua Shoes with a rating of 4.8 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Nike SB React Leo Skate Shoes",
+            "brand": "Nike",
+            "price": "$59.97",
+            "description": "White skate shoes in size 13 with a rating of 4.6 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 4,
+            "title": "YHOON Women's Walking Shoes",
+            "brand": "YHOON",
+            "price": "$26.99",
+            "description": "Sock Sneakers Slip On Mesh Platform Air Cushion Athletic Shoes Work Nurse Comfortable Black 8 with a rating of 4.4 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 5,
+            "title": "ZZHAP Men's Casual Oxford Shoes",
+            "brand": "ZZHAP",
+            "price": "$39.99",
+            "description": "Breathable Flat Fashion Sneakers with a rating of 4.7 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 6,
+            "title": "ZZHAP Men's Casual Oxford Shoes",
+            "brand": "ZZHAP",
+            "price": "$39.99",
+            "description": "Breathable Flat Fashion Sneakers with a rating of 4.7 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 7,
+            "title": "ZZHAP Men's Casual Oxford Shoes",
+            "brand": "ZZHAP",
+            "price": "$39.99",
+            "description": "Breathable Flat Fashion Sneakers with a rating of 4.7 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 8,
+            "title": "ZZHAP Men's Casual Oxford Shoes",
+            "brand": "ZZHAP",
+            "price": "$39.99",
+            "description": "Breathable Flat Fashion Sneakers with a rating of 4.7 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 9,
+            "title": "ZZHAP Men's Casual Oxford Shoes",
+            "brand": "ZZHAP",
+            "price": "$39.99",
+            "description": "Breathable Flat Fashion Sneakers with a rating of 4.7 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        },
+        {
+            "id": 10,
+            "title": "ZZHAP Men's Casual Oxford Shoes",
+            "brand": "ZZHAP",
+            "price": "$39.99",
+            "description": "Breathable Flat Fashion Sneakers with a rating of 4.7 stars out of 5.",
+            "image_url": "https://cdn.pixabay.com/photo/2021/05/15/10/59/fashion-6255516_960_720.jpg"
+        }
+    ]
+}

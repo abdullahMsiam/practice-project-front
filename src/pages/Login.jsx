@@ -24,8 +24,8 @@ const Login = () => {
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
-                    <h1 className="text-2xl font-bold pt-6">Policy Alert!</h1>
-                    <ol className='pb-6 pt-2 list-disc sm:hidden lg:block'>
+                    <h1 className="text-2xl font-bold pt-6 hidden md:block">Policy Alert!</h1>
+                    <ol className='pb-6 pt-2 list-disc hidden lg:block'>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis?</li>

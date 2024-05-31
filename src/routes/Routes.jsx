@@ -8,6 +8,7 @@ import Login from '../pages/Login';
 import Register from '../pages/Register';
 import Dashboard from '../pages/Dashboard';
 import PrivateRoute from './private/PrivateRoute';
+import ProductDetails from '../components/home/ProductDetails';
 
 
 
@@ -19,7 +20,13 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
+                loader: () => fetch("http://localhost:3000/shoes")
+            },
+            {
+                path: "/products/:id",
+                element: <ProductDetails />,
+                loader: ({ params }) => fetch(`http://localhost:3000/shoes/${params.id}`)
             },
             {
                 path: "/about",
